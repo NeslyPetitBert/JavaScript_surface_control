@@ -1,0 +1,210 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*STYLE BODY*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #595F61;
+    background-color: #EEECE9;
+}
+
+/*STYLE H1*/
+h1{
+    font-size: 30px;
+    border-bottom: 5px solid #93AEB2;
+    margin-bottom: 20px;
+    border-left: 5px solid #93AEB2;
+    color: #9793B2;
+    border-radius: 10px;
+}
+
+/*STYLE H3*/
+h3{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
+    color: #1C1E6A;
+    background-color: #FFFFFF;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/*STYLE H6*/
+h6{
+    font-size: 15px;
+    border-bottom: 5px solid #93AEB2;
+    border-left: 5px solid #93AEB2;
+    color: #0C8399;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/*STYLE H1, H3, H6*/
+h1,h3,h6{
+    display: inline-block;
+    font-family: Verdana;
+}
+
+/*STYLE P SPAN*/
+p{
+    font-family: "Times New Roman", Helvetica;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #1C1E6A;
+    font-style: normal;
+}
+
+p span{
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+
+/*STYLE LABEL INPUT & SELECT*/
+label{
+    display: inline-block;
+    text-align: left;
+    color: #8825C1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+select, input{
+    margin-bottom: 10px;
+}
+/*STYLE BUTTON*/
+button{
+    background-color: #45D6D8;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #6F511B;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #E1480F;
+    color: #FFF;
+
+}
+
+/*STYLES CLASSES*/
+
+#containeurParent{
+    width: 100%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+#containeurForm{
+    width: 50%;
+    margin-top: 10px;
+}
+
+#containeurFormS{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left : auto;
+    display: none;
+}
+
+#containeurFooter{
+    margin-top: 80px;
+}
+.clearBoth{
+    clear: both;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+#containeurErreur{
+    margin-top: 20px;
+}
+
+/*STYLE H1, H3, H6*/
+h1,h3,h6{
+    display: inline-block;
+    font-family: Verdana;
+}
+
+/*STYLE P SPAN*/
+p{
+    font-family: "Times New Roman", Helvetica;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #1C1E6A;
+    font-style: normal;
+}
+
+p span{
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+
+/*STYLE LABEL INPUT & SELECT*/
+label{
+    display: inline-block;
+    text-align: left;
+    color: #8825C1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+select, input{
+    margin-bottom: 10px;
+}
+/*STYLE BUTTON*/
+button{
+    background-color: #45D6D8;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #6F511B;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #E1480F;
+    color: #FFF;
+
+}
+
+/*STYLES CLASSES*/
+
+#containeurParent{
+    width: 100%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+#containeurForm{
+    width: 50%;
+    margin-top: 10px;
+}
+
+#containeurFormS{
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+#containeurFooter{
+    margin-top: 80px;
+}

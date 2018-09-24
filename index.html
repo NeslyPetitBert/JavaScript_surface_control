@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Contrôles de saisie avec JavaScript.</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link href="css/ControleDeSaisieJavaScript.css" rel="stylesheet" type="text/css"/>
+        <meta name="author" content="Nesly PETIT BERT">
+    </head>
+    <body>
+
+        <div class="container"><!--Début container principal-->
+
+            <div id="containeurParent"> <!--Début container secondaire-->
+
+                <h1>Contrôles de saisie ~ Javascript.</h1> <!--TITRE-->
+
+                <p>
+                    Une fois tous les champs de la partie <span>"Données"</span> remplis et après le sur le bouton <span>"Afficher"</span>.<br> 
+                    Les résultats seront affichés dans la partie <span>"Résultats" si les valeurs saisies sont correctes. Si non, le champ résultat restera invisible.</span>
+                    : les jours allant de 1 à 31, les mois de 1 à 12 / de janvier à décembre et les années à partir de l'année de départ indiquée supérieur ou égale à 1970 et inférieur à N-1
+                </p>
+
+                <!--Début FORMULAIREDE DE SAISIE-->
+                <form>
+                    <div id="containeurForm">
+                        <h6>Entrer les données :</h6>
+                        <div class="clearBoth"></div>
+                        <!--Les Jours-->
+                        <label for="numeroJourDeDepart">Numéro du jour de départ : </label>
+                        <input type="text" id="numeroJourDeDepart" class="form-control" placeholder="Jour(s) compris entre 1 et 30 et inféieur au nombre de jour attendu" required/>
+
+                        <!--Les Mois-->
+                        <label for="nombreDeJoursAttendu">Nombre de jour attendu :</label>
+                        <input type="text" id="nombreDeJoursAttendu" class="form-control" placeholder="Jour(s) compris entre 1 et 31 et supérieur au nombre de jour de départ" required/>
+
+                        <label for="numeroMoisDeDepart">Numéro du mois de départ : </label>
+                        <input type="text" id="numeroMoisDeDepart" class="form-control" placeholder="Mois compris entre 1 et 11 et inféieur au numéro de mois attendu" required/>
+
+                        <label for="nombreMoisAttendu">Nombre de mois attendu :</label>
+                        <input type="text" id="nombreMoisAttendu" class="form-control" placeholder="Mois compris entre 1 et 12 et supérieur au nombre de mois de départ" required/>
+                        <!--Les Années-->
+                        <label for="anneeDeDepart">Année de départ : </label>
+                        <input type="text" id="anneeDeDepart" class="form-control" placeholder="Année comprise entre 1970 et N-1" required/>        
+
+                    </div>
+                </form> <!--Fin FORMULAIREDE DE SAISIE-->
+
+
+                <!--Bouton validation-->
+                <button id="btResultat">Afficher</button>
+                <!--FIN VALIDATION DES DONNEES POUR L'AFFICHAGE DES RESULTATS-->
+
+                <!--DEBUT VALIDATION DES DONNEES POUR L'AFFICHAGE DES RESULTATS-->
+                <div id="containeurErreur">
+                    <label id="resultatErreur"></label>
+                </div>
+
+                <!-- DEBUT AFFICHAGE DES RESULTATS-->
+                <div id="containeurFormS">
+                    <h6>Résultats :</h6>
+                    <div class="clearBoth"></div>
+                    <!--Jours-->
+                    <div class="form-group col-md-3">
+                        <label for="resultatForSelectNumerosJour">Jours : </label>
+                        <select id="resultatForSelectNumerosJour" class=" form-control">
+                        </select>
+                    </div>
+
+                    <!--Numéros mois-->
+                    <div class="form-group col-md-3">
+                        <label for="resultatForSelectNumerosMois">N° mois : </label>
+                        <select id="resultatForSelectNumerosMois" class="form-control">
+                        </select>
+                    </div>
+
+                    <!--Noms Mois-->
+                    <div class="form-group col-md-3">
+                        <label for="resultatForSelectNomsMois">Mois : </label>
+                        <select id="resultatForSelectNomsMois" class="form-control">
+                        </select>
+                    </div>
+
+                    <!--Année-->
+                    <div class="form-group col-md-3">
+                        <label for="resultatForSelectAnnee">Année : </label>
+                        <select id="resultatForSelectAnnee" class="form-control">
+                        </select>  
+                    </div>
+
+                </div>
+                <!-- FINI AFFICHAGE DES RESULTATS-->
+
+
+
+                <div id="containeurFooter">
+
+                    <h3 id="footer">Nesly PETIT BERT</h3>
+                </div>
+
+            </div> <!--Fin container secondaire-->
+
+        </div> <!--Fin container principal-->
+
+        <script src="js/ControleDeSaisieJavaScript.js" type="text/javascript"></script>
+
+    </body>
+</html>
